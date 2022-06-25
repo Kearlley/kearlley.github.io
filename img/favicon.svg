@@ -1,6 +1,1 @@
-<svg
-    xmlns="http://www.w3.org/2000/svg" version="1.1" width="256" height="256" viewbox="0 0 949 256">
-    <path fill="#2366d1" d="M110.85125168440814 128L221.70250336881628 192L110.85125168440814 256L0 192Z"/>
-    <path fill="#609dff" d="M110.85125168440814 64L221.70250336881628 128L110.85125168440814 192L0 128Z"/>
-    <path fill="#a4c7ff" d="M110.85125168440814 0L221.70250336881628 64L110.85125168440814 128L0 64Z"/>
-</svg>
+<svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="planeIconTitle" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" color="#000"> <title id="planeIconTitle">Plane</title> <path d="M18.3937 4.3638L14 7L6 5L5 6L10.5 10.5L8 14H5L4 15L6.5 16.5L7.5 17.5L9 20L10 19V16L13.5 13.5L18 19L19 18L17 10L19.6362 5.60634C19.85 5.24999 19.7939 4.79385 19.5 4.5C19.2061 4.20615 18.75 4.14999 18.3937 4.3638Z"/> </svg>
