@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kearlley&#39;s Blog</title>
+  
+  
+  <link href="http://kearlley.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://kearlley.github.io/"/>
+  <updated>2022-09-12T18:30:44.383Z</updated>
+  <id>http://kearlley.github.io/</id>
+  
+  <author>
+    <name>Kearlley</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个基于 dialog 的 Python TUI</title>
+    <link href="http://kearlley.github.io/post/d46182c3.html"/>
+    <id>http://kearlley.github.io/post/d46182c3.html</id>
+    <published>2022-09-12T17:05:30.000Z</published>
+    <updated>2022-09-12T18:30:44.383Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在开发这个项目之初，因为对于 Shell Script 并不是很熟练，用起来感觉也没 Python 方便，而且又想用 dialog 这种方便的 TUI，就通过将其 dialog 中涉及创建窗口的参数都变成了 Python 中的函数来方便调用，顺便还可以测试看下每个参数都有什么用，什么参数能创建什么样的窗体。<del>说白了就是套了个壳(</del></p><h2 id="开发思路"><a href="#开发思路" class="headerlink" title="开发思路"></a>开发思路</h2><p>用的是 subprocess.run() 来创建的线程， 其中 subprocess.run().returncode 返回的内容就等于 Shell Script 中的 $? 值，这样就可以简体的到用户是选择的 OK 还是 Close 或者是 ESC 直接退出的<br>对于用户输入或者是选择的内容监听采用的是通过附加 dialog –stdout 来将其用户选择或输入的内容通过 stdout 输出， 在 subprocess.run() 中添加 stdout&#x3D;subprocess.PIPE 来传递参数，最后通过  subprocess.run().stdout 来获取到其内容，因为这个参数返回的是 Bytes 字符串，所以我们可以把它解码一下，通过添加.decode(‘utf-8’) 来转换为 utf-8，还可以通过.split()来把其中的空格切分变成一个列表并保存多个返回的参数方便后续程序的调用</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>目前全部函数基本上都写了对应中文注释，应该很容易上手<br>只需要 复制 <a href="https://raw.githubusercontent.com/Kearlley/PyDialogTUI/main/DialogTUI.py">DialogTUI.py</a> 到项目中，然后引用就行了<br>比如这样</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> DialogTUI <span class="keyword">as</span> ui</span><br><span class="line"></span><br><span class="line">menu_out = ui.Window(<span class="string">&#x27;Window Title&#x27;</span>,<span class="number">20</span>,<span class="number">30</span>).Menu(<span class="string">&#x27;Hello World!&#x27;</span>,<span class="number">4</span>,&#123;</span><br><span class="line">        <span class="string">&#x27;tag1&#x27;</span>: <span class="string">&#x27;name1&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;tag2&#x27;</span>: <span class="string">&#x27;name2&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"><span class="built_in">print</span>(menu_out)</span><br></pre></td></tr></table></figure><p>这个代码例子创建了一个菜单列表，如图:<br><img src="https://cdn.jsdelivr.net/gh/Kearlley/image/PyDialogTUI/menu_example.png"><br>其中ui.Window的参数定义了(标题，宽，高)<br>而 .Menu 则指定了要创建的窗口类型 比如这个就是一个菜单，其参数定义了(提示信息,菜单的高度，通过字典完成菜单内的内容显示)<br>最终会 打印 一个 元组 包含了状态码，以及用户选择所对应的 TAG</p><p>更多详情请查看GitHub上的项目</p><h2 id="开源地址"><a href="#开源地址" class="headerlink" title="开源地址"></a>开源地址</h2><p><a href="https://github.com/Kearlley/PyDialogTUI">GitHub</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在开发这个项目之初，因为对于 Shell Script 并不是很熟练，用起来感觉也没 Python 方便，而且又想用 dialog 这种方便</summary>
+      
+    
+    
+    
+    <category term="开发" scheme="http://kearlley.github.io/categories/%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Python" scheme="http://kearlley.github.io/tags/Python/"/>
+    
+    <category term="UI" scheme="http://kearlley.github.io/tags/UI/"/>
+    
+    <category term="dialog" scheme="http://kearlley.github.io/tags/dialog/"/>
+    
+  </entry>
+  
+</feed>
