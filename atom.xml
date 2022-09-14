@@ -3,11 +3,11 @@
   <title>Kearlley&#39;s Blog</title>
   
   
-  <link href="http://kearlley.github.io/atom.xml" rel="self"/>
+  <link href="https://blog.karamr.eu.org/atom.xml" rel="self"/>
   
-  <link href="http://kearlley.github.io/"/>
+  <link href="https://blog.karamr.eu.org/"/>
   <updated>2022-09-12T18:30:44.383Z</updated>
-  <id>http://kearlley.github.io/</id>
+  <id>https://blog.karamr.eu.org/</id>
   
   <author>
     <name>Kearlley</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>一个基于 dialog 的 Python TUI</title>
-    <link href="http://kearlley.github.io/post/d46182c3.html"/>
-    <id>http://kearlley.github.io/post/d46182c3.html</id>
+    <link href="https://blog.karamr.eu.org/post/d46182c3.html"/>
+    <id>https://blog.karamr.eu.org/post/d46182c3.html</id>
     <published>2022-09-12T17:05:30.000Z</published>
     <updated>2022-09-12T18:30:44.383Z</updated>
     
@@ -33,14 +33,14 @@
     
     
     
-    <category term="开发" scheme="http://kearlley.github.io/categories/%E5%BC%80%E5%8F%91/"/>
+    <category term="开发" scheme="https://blog.karamr.eu.org/categories/%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="Python" scheme="http://kearlley.github.io/tags/Python/"/>
+    <category term="Python" scheme="https://blog.karamr.eu.org/tags/Python/"/>
     
-    <category term="UI" scheme="http://kearlley.github.io/tags/UI/"/>
+    <category term="UI" scheme="https://blog.karamr.eu.org/tags/UI/"/>
     
-    <category term="dialog" scheme="http://kearlley.github.io/tags/dialog/"/>
+    <category term="dialog" scheme="https://blog.karamr.eu.org/tags/dialog/"/>
     
   </entry>
   

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kearlley.github.io/post/d46182c3.html</loc>
+    <loc>https://blog.karamr.eu.org/post/d46182c3.html</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://kearlley.github.io/about/index.html</loc>
+    <loc>https://blog.karamr.eu.org/about/index.html</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://kearlley.github.io/categories/index.html</loc>
+    <loc>https://blog.karamr.eu.org/categories/index.html</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://kearlley.github.io/tags/index.html</loc>
+    <loc>https://blog.karamr.eu.org/tags/index.html</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -39,30 +39,30 @@
   
 
   <url>
-    <loc>http://kearlley.github.io/</loc>
-    <lastmod>2022-09-13</lastmod>
+    <loc>https://blog.karamr.eu.org/</loc>
+    <lastmod>2022-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://kearlley.github.io/tags/Python/</loc>
-    <lastmod>2022-09-13</lastmod>
+    <loc>https://blog.karamr.eu.org/tags/Python/</loc>
+    <lastmod>2022-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kearlley.github.io/tags/UI/</loc>
-    <lastmod>2022-09-13</lastmod>
+    <loc>https://blog.karamr.eu.org/tags/UI/</loc>
+    <lastmod>2022-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://kearlley.github.io/tags/dialog/</loc>
-    <lastmod>2022-09-13</lastmod>
+    <loc>https://blog.karamr.eu.org/tags/dialog/</loc>
+    <lastmod>2022-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -70,8 +70,8 @@
 
   
   <url>
-    <loc>http://kearlley.github.io/categories/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2022-09-13</lastmod>
+    <loc>https://blog.karamr.eu.org/categories/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2022-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
